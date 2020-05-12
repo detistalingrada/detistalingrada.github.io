@@ -1,0 +1,508 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* My styles */
+
+/* fonts */
+
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("/fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("/fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("/fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("/fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("/fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("/fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "OpenSansRegular", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: url(/img/bg.png) no-repeat fixed center center rgba(0, 0, 0, 0);
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "OpenSansBold", sans-serif;
+  color: #E31E24;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.tile_small {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: #fff 1px 1px 1px, #fff -1px 1px 1px, #fff 1px -1px 1px, #fff -1px -1px 1px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.title_normal {
+  font-size: 48px;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: #fff 2px 2px 2px, #fff -2px 2px 2px, #fff 2px -2px 2px, #fff -2px -2px 2px;
+  display: block;
+  color: #E31E24;
+}
+
+.my_menu {
+  background-color: #FDDB39;
+  border: 1px solid #FDBB27;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.my_menu .nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #E31E24;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #E31E24;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+.my_menu .nav-link:hover {
+  background-color: #FDBB27;
+  color: #E31E24;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #E31E24;
+}
+
+.navbar-toggler {
+  border: 1px solid #FDBB27;
+}
+
+.panel {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel .aside {
+  padding: 15px;
+}
+
+.aside h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.aside p {
+  text-align: justify;
+  text-indent: 2em;
+  margin: 0 0 10px;
+}
+
+.my_footer .panel {
+  border: 1px solid #FDBB27;
+  background-color: #FDDB39;
+  padding: 0 10px;
+}
+
+.footer-left,
+.footer-right {
+  min-height: 48px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title,
+.footer-tel {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-tel a{
+  text-decoration: none;
+  color: #E31E24
+}
+
+.footer-tel a:hover {
+  border-bottom: 1px dotted #E31E24;
+}
+
+.photo_case {
+  margin: 5px auto;
+}
+
+.centre_img {
+  display: flex;
+  justify-content: center;
+}
+
+.accent {
+  color: #E31E24;
+  font-family: "OpenSansBold", sans-serif;
+}
+
+
+/* // Экстрамалые девайсы («телефоны», < 576px) */
+/* // Нет @media, т.к. это по умолчанию в Bootstrap */
+
+/* // Малые девайсы («ландшафтные телефоны», >= 576px) */
+@media (min-width: 576px) {
+
+}
+
+/* // Средние девайсы («таблетки», >= 768px) */
+@media (min-width: 768px) {
+  .footer-left {
+    justify-content: flex-start;
+  }
+  .footer-right {
+    justify-content: flex-end;
+  }
+}
+
+/* // Большие девайсы (десктопы, >= 992px) */
+@media (min-width: 992px) {
+  
+}
+
+/* // Экстрабольшие девайсы (большие десктопы, >= 1200px) */
+@media (min-width: 1200px) {
+
+}
