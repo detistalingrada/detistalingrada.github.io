@@ -478,6 +478,15 @@ h6 {
   font-family: "OpenSansBold", sans-serif;
 }
 
+.card-deck .card {
+  -ms-flex: 1 0 30%;
+  flex: 1 0 30%;
+  margin-bottom: 15px;
+}
+.card-deck .card .card-body p{
+  text-indent: 0;
+}
+
 
 /* // Экстрамалые девайсы («телефоны», < 576px) */
 /* // Нет @media, т.к. это по умолчанию в Bootstrap */
