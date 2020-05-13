@@ -10,6 +10,9 @@ layout: default
 			<p> <b class="accent">Тел.:</b>
 				8 (8442) 38-46-51
 			</p>
+			<p> <b class="accent">Email:</b>
+				{{ site.email }}
+			</p>
 		</div>
 		<div class="col-sm-12 map">
 			<a class="dg-widget-link"
