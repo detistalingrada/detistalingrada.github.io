@@ -16,23 +16,23 @@ layout: default
 		</div>
 		<div class="col-sm-12 map">
 			<a class="dg-widget-link"
-				href="http://2gis.ru/volgograd/firm/70000001021583653/center/44.524327,48.71068/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+				href="http://2gis.ru/volgograd/firm/70000001021583653/center/44.524294,48.710769/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
 				на карте Волгограда</a>
-			<div class="dg-widget-link">
-				<a
-					href="http://2gis.ru/volgograd/center/44.524327,48.71068/zoom/16/routeTab/rsType/bus/to/44.524327,48.71068╎Дети Сталинграда, Волгоградская общественная организация ветеранов?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">
-					Найти проезд до Дети Сталинграда, Волгоградская общественная организация ветеранов
-				</a>
-			</div>
-			<script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+			<div class="dg-widget-link"><a
+					href="http://2gis.ru/volgograd/firm/70000001021583653/photos/70000001021583653/center/44.524294,48.710769/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии
+					компании</a></div>
+			<div class="dg-widget-link"><a
+					href="http://2gis.ru/volgograd/center/44.524294,48.710769/zoom/16/routeTab/rsType/bus/to/44.524294,48.710769╎Дети Сталинграда, Волгоградская общественная организация?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+					проезд до Дети Сталинграда, Волгоградская общественная организация</a></div>
+			<script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
 			<script charset="utf-8">
 				new DGWidgetLoader({
 					"width": 640,
 					"height": 600,
 					"borderColor": "#a3a3a3",
 					"pos": {
-						"lat": 48.71068,
-						"lon": 44.524327,
+						"lat": 48.710769,
+						"lon": 44.524294,
 						"zoom": 16
 					},
 					"opt": {
@@ -42,10 +42,8 @@ layout: default
 						"id": "70000001021583653"
 					}]
 				});
-			</script>
-			<noscript style="color:#c00;font-size:16px;font-weight:bold;">
-				Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
-			</noscript>
+			</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript.
+				Включите его в настройках вашего браузера.</noscript>
 		</div>
 	</div>
 </div>
