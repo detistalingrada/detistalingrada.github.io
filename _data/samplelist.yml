@@ -1,0 +1,23 @@
+docs_list_title: Main Menu
+docs:
+
+- title: Главная
+  url: /
+
+- title: Подготовка к празднованию 75 Победы в Сталинградской битве
+  url: /podgotovka_75.html
+
+- title: Новости
+  url: /news.html
+
+- title: Структура организации
+  url: /structure.html
+
+- title: Цели и задачи
+  url: /goals.html
+
+- title: О работе
+  url: /work.html
+
+- title: Контакты
+  url: /contacts.html
