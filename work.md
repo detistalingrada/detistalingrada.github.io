@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <h4 class="center">Краткая информация о работе организации:</h4>
 
 <iframe src="https://drive.google.com/file/d/1pOHfno4UPrLlMxugXK9uyyRDv1AAJHP9/preview" width="100%"
