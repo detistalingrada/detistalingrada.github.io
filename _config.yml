@@ -1,6 +1,6 @@
 ---
 title: ВОО Дети Сталинграда
-timezone: UTC
+timezone: Europe/Moscow
 collections:
   posts:
     title: Posts
@@ -10,7 +10,7 @@ collections:
     output: true
 email: detistalingrada@gmail.com
 description: Официальный сайт Волгоградской общественной организации Дкти Сталинграда
-baseurl: ''
+baseurl: 
 url: detistalingrada.github.io
 theme: minima
 plugins:
