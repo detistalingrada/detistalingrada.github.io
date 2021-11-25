@@ -11,4 +11,4 @@ excerpt: В статье говорится о проекте «Школа ст�
 [Источник МТВ.ОНЛАЙН](https://мтв.онлайн/news/obrazovanie/unikalnaya-shkola-stalingradskikh-pokoleniy-poyavilas-v-volgograde-6432278773.html?fbclid=IwAR0oRqgcb63u11PFgYDKR0R8NpmQ5Gb1kWKwut416gWvlBrWO-OhPW-y0h8)
 
 Сюжет "Уникальная «Школа сталинградских поколений» появилась в Волгограде"
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/BCc4biceRHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="720" src="https://www.youtube.com/embed/BCc4biceRHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
