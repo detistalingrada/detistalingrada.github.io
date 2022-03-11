@@ -488,7 +488,8 @@ h6 {
     text-indent: 0;
 }
 
-.card-body img {
+.card-body img,
+.p>img {
     max-width: 100%;
     height: auto;
 }
