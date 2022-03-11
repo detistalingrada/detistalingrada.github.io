@@ -488,6 +488,10 @@ h6 {
     text-indent: 0;
 }
 
+.card-deck .card .card-body a {
+    text-decoration: none;
+}
+
 .card-body img,
 p>img {
     display: block;
