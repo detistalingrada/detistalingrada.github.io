@@ -258,6 +258,7 @@ header {
 
 .menu_link.active {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Nav menu */
