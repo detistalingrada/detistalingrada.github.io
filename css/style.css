@@ -270,6 +270,7 @@ header {
   top: 0;
   background-color: var(--yellow);
   overflow: hidden;
+  z-index: 100;
 }
 
 .menu .menu_link {
