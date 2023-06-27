@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -25,6 +25,7 @@
   --yellow: #fddb39;
   --orange: #fdbb27;
   --brown: #a5280b;
+  --olive: #808000;
 }
 
 html {
@@ -180,12 +181,8 @@ textarea {
 body {
   min-width: 100vw;
   min-height: 100vh;
-  /* background-image: url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-  background-color: #808000;
-  font-family: "Roboto", sans-serif;
+  background-color: var(--olive);
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -194,7 +191,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--red);
 }
@@ -366,27 +363,41 @@ main p {
   text-align: justify;
 }
 
-/* .card-deck {
-  display: flex;
-  flex-wrap: wrap;
-} */
+.card-deck {
+  padding: 20px 0 0;
+}
 
 .card {
   position: relative;
+  margin-bottom: 40px;
+}
+
+.card .news-link {
+  text-decoration: none;
+}
+
+.card .card-title {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .card img {
   max-width: 100%;
 }
 
+.card-date {
+  color: var(--grey);
+}
+
 .card::after {
   display: block;
   content: "";
   width: 100%;
-  height: 1px;
-  background-color: #ccc;
+  height: 2px;
+  background-color: var(--olive);
   position: absolute;
-  bottom: -10px;
+  bottom: -20px;
 }
 
 .center {
