@@ -180,10 +180,11 @@ textarea {
 body {
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("../img/bg.jpg");
+  /* background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #808000;
   font-family: "Roboto", sans-serif;
 }
 
