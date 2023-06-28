@@ -415,6 +415,18 @@ main p {
   height: auto;
 }
 
+.photo_case {
+  margin: 5px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.photo_case img {
+  max-width: 100%;
+}
+
 footer {
   text-align: center;
   background-color: var(--yellow);
