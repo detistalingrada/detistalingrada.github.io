@@ -466,6 +466,16 @@ footer {
   color: var(--brown);
 }
 
+.slick-prev {
+  left: 25px;
+  z-index: 50;
+}
+
+.slick-next {
+  right: 25px;
+  z-index: 50;
+}
+
 @media screen and (min-width: 375px) {
   .site_title .title_small {
     font-size: 20px;
