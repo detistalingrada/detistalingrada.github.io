@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".photo_case").slick({
+  $(".slider").slick({
     dots: true,
     infinite: true,
     speed: 1000,
