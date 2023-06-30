@@ -1,15 +1,25 @@
-<nav class="my_menu navbar navbar-expand-lg navbar-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-    aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      {% for item in site.data.samplelist.docs %}
-      <li class="nav-item {% if item.url == page.url %}active{% endif %}">
-        <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+<nav class="nav">
+  <ul class="menu">
+    <li class="menu_item">
+      <a class="menu_link" href="/index.html">Главная</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/news.html">Новости</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/structure.html">Структура организации</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/goals.html">Цели и задачи</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/activity.html">Деятельность</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/work.html">О работе</a>
+    </li>
+    <li class="menu_item">
+      <a class="menu_link" href="/contacts.html">Контакты</a>
+    </li>
+  </ul>
 </nav>
