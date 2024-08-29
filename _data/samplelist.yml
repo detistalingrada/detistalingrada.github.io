@@ -1,23 +1,19 @@
 docs_list_title: Main Menu
 docs:
+  - title: Главная
+    url: /
 
-- title: Главная
-  url: /
+  - title: Новости
+    url: /news.html
 
-- title: Новости
-  url: /news.html
+  - title: Структура организации
+    url: /structure.html
 
-- title: Структура организации
-  url: /structure.html
+  - title: Цели и задачи
+    url: /goals.html
 
-- title: Цели и задачи
-  url: /goals.html
+  - title: Деятельность
+    url: /activity.html
 
-- title: О работе
-  url: /work.html
-
-- title: Деятельность
-  url: /activity.html
-
-- title: Контакты
-  url: /contacts.html
+  - title: Контакты
+    url: /contacts.html
