@@ -13,7 +13,7 @@ layout: default
       <p class="card-text">{{ post.excerpt }}</p>
     </div>
     <div class="card-footer">
-      <small class="card-date">{{ post.date }}</small>
+      <small class="card-date">{{ post.date | date: '%d.%m.%Y' }}</small>
     </div>
   </div>
   {% endfor %}
